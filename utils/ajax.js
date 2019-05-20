@@ -1,4 +1,4 @@
-const api = '127.0.0.1:8888/shoes/';
+const api = 'http://127.0.0.1:8888/shoes/';
 function request(opt) {
   // set token
   wx.request({
@@ -9,16 +9,16 @@ function request(opt) {
     },
     data: opt.data,
     success: function (res) {
-      if (res.data.code == 100) {
-        if (opt.success) {
-          opt.success(res.data);
-        }
-      } else {
-        console.error(res);
-        wx.showToast({
-          title: res.data.message,
-        })
-      }
+      // if (res.data.code == 100) {
+      //   if (opt.success) {
+      //     opt.success(res.data);
+      //   }
+      // } else {
+      //   console.error(res);
+      //   wx.showToast({
+      //     title: res.data.message,
+      //   })
+      // }
     }
   })
 }

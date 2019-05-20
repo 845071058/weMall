@@ -8,7 +8,7 @@
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{bnrUrl}}">
       <swiper-item>
-        <image src="{{item.url}}" mode="widthFix"  catchtap="show"/>
+        <image src="{{item.url}}" mode="widthFix"  catchtap="show" />
       </swiper-item>
     </block>
   </swiper> 
@@ -18,7 +18,7 @@
          <block wx:for-items="{{banners}}">
           <view class="welfares-good" catchtap="catchTapCategory">
             <view>
-              <image src="{{item.url}}" class="welfares-image" mode="widthFix"  class='myImage'/> 
+              <image src="{{item.url}}" class="welfares-image" mode="widthFix" /> 
             </view>
             <view class="product-name">
               Nike 720
